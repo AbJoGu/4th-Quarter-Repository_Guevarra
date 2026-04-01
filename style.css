@@ -1,0 +1,37 @@
+#star1, #star2, #star3, #star4, #star5 {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#ratingButton {
+    background-color: #ffffff;
+    color: white;
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 30px;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    border: 2px solid #000000;
+    border-radius: 25px;
+    height: 90vh;
+    width: 50vw;
+ 
+}
+
+ratingSubmit {
+    background-color: #2baaff;
+    color: rgb(27, 126, 255);
+    padding: 5px 5px;
+    border: 1px;
+    cursor: pointer;
+}
