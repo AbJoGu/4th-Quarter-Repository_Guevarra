@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="author" content="<your names>" />
-  <meta name="revised" content="<date today>" />
+  <meta name="author" content="<GUEVRRA, Abisha Joram>" />
+  <meta name="revised" content="<01 April 2026>" />
   <style>
     body { font-family: Arial, sans-serif; }
     .header, .footer {
@@ -11,23 +11,38 @@
     }
     .footer {
        opacity: 0.5;
+       position: fixed; bottom: 0; width: 100%;
     }
     .sidebar {
       background: lightgreen;
       width: 150px;
       height: 200px;
+      position: relative; top: 20px; left: 20px;
     }
     .content {
       background: lightyellow;
       width: 300px;
       height: 200px;
+      position: relative; top: 66px; left: 200px;
+      z-index: 1
     }    
+
+    .notice {
+    position: absolute; top: 0; right: 0;
+    background: orange;
+    padding: 10px;
+    z-index: 2;
+  }
+
   </style>
 </head>
 <body>
   <div class="header">Header</div>
   <div class="sidebar">Sidebar</div>
-  <div class="content">Main Content</div>
+  <div class="content">
+    <div class="notice">Notice!</div>
+  </div>
   <div class="footer">Footer</div>
+  
 </body>
 </html>
