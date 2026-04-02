@@ -1,4 +1,102 @@
-const ratingElement = [
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #star1, #star2, #star3, #star4, #star5 {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#ratingButton {
+    background-color: #ffffff;
+    color: white;
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 30px;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    border: 2px solid #000000;
+    border-radius: 25px;
+    height: 90vh;
+    width: 50vw;
+ 
+}
+
+ratingSubmit {
+    background-color: #2baaff;
+    color: rgb(27, 126, 255);
+    padding: 5px 5px;
+    border: 1px;
+    cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <h2>Add Movie</h2> <br> <br>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required> <br><br>
+
+                <label for="year">Year</label>
+                <input type="number" id="year" name="year" required> <br><br>
+
+                <label for="genre">Genre</label>
+                <select id="genre" name="genre" required> <br><br>
+                    <option value="action"> Action </option>
+                    <option value="comedy"> Comedy </option>
+                    <option value="drama"> Drama </option>
+                    <option value="horror"> Horror </option>
+                    <option value="sci-fi"> Sci-Fi </option>
+                    <option value="romance"> Romance </option>
+                </select>
+
+                <br><br>
+
+                <h4> *Lowest rating: 1/5 stars </h4>
+
+                <div id="star1" onclick="rateMovie1()">
+                    <p> ✩ </p>
+                </div>
+                <div id="star2" onclick="rateMovie2()">
+                    <p> ✩ </p>
+                </div>
+                <div id="star3" onclick="rateMovie3()">
+                    <p> ✩ </p>
+                </div>
+                <div id="star4" onclick="rateMovie4()">
+                    <p> ✩ </p>
+                </div>
+                <div id="star5" onclick="rateMovie5()">
+                    <p> ✩ </p>
+                </div> 
+
+                <br><br>
+
+                <button id="ratingSubmit" type="submit" onclick="savePrint(event)"> Rate Movie </button>
+
+                <br><br>
+
+                <h3> Movie List </h3>
+
+                <div id="movieList">
+                    <!-- Movie list displayed here -->
+                </div>
+            </fieldset>
+        </form>
+
+        <script>
+            const ratingElement = [
     document.getElementById("star1"),
     document.getElementById("star2"),
     document.getElementById("star3"),
@@ -111,3 +209,6 @@ function deleteMovie(index) {
         renderMovieList();
     }
 }
+        </script>
+    </body>
+</html>
