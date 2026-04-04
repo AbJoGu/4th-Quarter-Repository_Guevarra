@@ -18,30 +18,59 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(156, 156, 156, 0.7);
+            background-color: rgba(116, 116, 116, 0.589);
             z-index: -1;
         }
 
         .greeting {
-            position: absolute;
+            position: absolute; 
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(253, 254, 255, 0);
+            background-color: rgb(255, 255, 255);
             padding: 50px;
-            border-radius: 30px;
             font-family: 'Courier New', Courier, monospace;
             color: rgb(0, 0, 0);
-            text-justify: center
+            text-justify: center;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
         }
+
+        a {
+            color: rgb(0, 67, 145);
+            text-decoration: none;
+        }
+
+        .throwBall {
+            position: absolute;
+            left: 60%;
+            width: 35%;
+            z-index: -1;
+        }
+
         </style>
     </head>
     <body>
        <div class="greeting">
+            <img src="Drawing Of Someone Throwing A Ball.gif" class="throwBall">
+            <br>
+            <p> the output of A.J. Guevarra... </p>
+            <br>
+            <br>
             <h2> <b> Welcome to PhysiForm </b></h2> <br>
             <p> <b>Your one-stop shop for physics problem-solving!</b> </p>
             <p> <b>Our goal is to teach you the basics of physics and problem solving, that will</b> </p>
-            <p> <b>be the basis of more complex concepts.</b> </p>
+            <p> <b>be the basis of more complex concepts.</b> </p> <br> <br>
+
+            <div class="HomeNav">
+                <a href="./Lessons Folder P6/LessonDirectory.html"> <b> [   Lessons     |</b> </a>
+                <a href=""> <b> Notes    |</b>  </a>
+                <a href=""> <b> Quizes     |</b>  </a>
+                <a href=""> <b> Videos and Resources     ]</b> </a>
+            </div>
         </div>
     </body>
 </html>
