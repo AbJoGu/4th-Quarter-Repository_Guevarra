@@ -83,16 +83,13 @@
                 <label for="Password">Password</label>
                 <input type="password" placeholder="Enter Password" name="Password" required>
 
-                <button type="submit" onclick="saveUserData()">Login</button>
+                <button type="submit" onclick="SaveAndOpen()">Login</button>
             </fieldset>
         </form>
         <script>
-            document.getElementById('InputSpaces').addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent the default form submission
-                // Here you can add authentication logic if needed
-                // For now, just redirect to homepage
-                window.location.href = 'homepage.html';
-            });
+            function SaveAndOpen() {
+                window.open("Homepage.html");
+            }
         </script>
     </body>
 </html>
