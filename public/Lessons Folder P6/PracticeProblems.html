@@ -55,6 +55,7 @@
     <body>
         <div class="panel1">
             <h1>Practice Problems</h1>
+            <p> _____________________________________________________________________________________________________________</p>
             <p>Here are some practice problems to help you reinforce your understanding of the concepts covered in this chapter.</p>
             <br>
             <forms>
@@ -98,10 +99,11 @@
                 <label for="option3"> Mass </label>
 
                 <input type="radio" id="option4" name="problem3" value="time">
-                <label for="option4"> Time </label> <br><br>
+                <label for="option4"> Time </label> <br><br><br>
 
-                <button type="submit" onclick="checkAnswers()"> Submit and Check </button>
+                <button type="button" onclick="checkAnswers()"> Submit and Check </button>
             </forms>
+            <p> _____________________________________________________________________________________________________________</p>
             <br>
             <nav>
                 <a href="ChapterSummary.html"> Back to Chapter Summary    |</a>
@@ -114,7 +116,7 @@
                 const problem1Answer = document.querySelector('input[name="problem1"]:checked').value;
                 const problem2Answer = document.querySelector('input[name="problem2"]:checked').value;
                 const problem3Answer = document.querySelector('input[name="problem3"]:checked').value
-                const score = 0;
+                let score = 0;
 
                 if (problem1Answer === "10ms") {
                     score = score + 1;
@@ -122,13 +124,13 @@
 
                 if (problem2Answer === "20m") {
                     score = score + 1;
-                    alert("Correct! The maximum height is 20 m.");
                 } 
+
                 if (problem3Answer === "velocity") {
                     score = score + 1;
                 }
 
-                alert("Your score is: " + score + "/3");
+                alert("Your score is: " + score + "/ 3");
             }
         </script>
     </body>

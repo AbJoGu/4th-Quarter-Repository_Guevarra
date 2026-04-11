@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson 1: Newton's Laws of Motion </title>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+                color: #333;
+                background-image: url(../Physics-Formula-Background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            body::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 120%;
+                background-color: rgba(78, 78, 78, 0.589);
+                z-index: -1;
+            }
+            h1 {
+                color: #000000;
+                text-align: center;
+                margin-top: 50px;
+            }
+            
+            .panel1 {
+                maargin-top: 30px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 30px;
+                position: relative; top: 8%; left: 7.5%;
+                width: 80%;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+
+            .nav {
+                text-align: center;
+                margin-top: 20px;
+            }
+
+             a {
+                color: rgb(0, 67, 145);
+                text-decoration: none;
+                font-family: 'Monospace', 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel1">
+            <h1>Lesson 1: Newton's Laws of Motion </h1>
+            <p> ____________________________________________________________________________________________________________</p>
+            <br>
+            <p> Newton's Laws are 3 fundamental rules the help us predict the motion of objects. They are the basis for </p>
+            <p> classical mechanics, and they have been used to explain a wide range of phenomena, from the motion of planets </p>
+            <p> to the behavior of subatomic particles. These are the three laws of motion:</p>
+            <p> 1. An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force.</p>
+            <p> 2. The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.</p>
+            <p> 3. For every action, there is an equal and opposite reaction.</p>
+            <p> ____________________________________________________________________________________________________________</p>
+            <br> <br>
+            <nav>
+                <a href="LessonDirectory.html">Back to Lesson Directory    |</a>
+                <a href="Chap1Lesson2.html" > Next Lesson >>> </a>
+            </nav>
+        </div>
+    </body>
+</html>
