@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition and Animation Exercises</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Sample Code to implement transform and transition">
+	    <meta name="author" content="A.L. Mendoza & M.Tarcelo">
+	    <meta name="revised" content="12/04/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			.pokemon1, .pokemon2, .pokemon3, .pokemon4, .pokemon5 {
+                width: 100px;
+                height: 200px;
+                margin: 20px;
+                transition: transform 0.5s ease-in-out;
+                position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);
+                transform-origin: bottom left;
+
+            }
+
+            #deck:hover .pokemon1 {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+
+            #deck:hover .pokemon2 {
+                transform: translate(-50%, -50%) rotate(-30deg);
+
+
+            }
+
+            #deck:hover .pokemon3 {
+                transform: translate(-50%, -50%) rotate(-15deg);
+        
+            }
+
+            #deck:hover .pokemon4 {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            #deck:hover .pokemon5 {
+                transform: translate(-50%, -50%) rotate(15deg);
+            }
+
+		</style>
+	</head>
+	<body>
+		<div id="deck">
+			<div class="pokemon1"> <img src="https://m.media-amazon.com/images/I/51QO4llkk7L._AC_.jpg" alt="Pokemon 1"></div>
+			<div class="pokemon2"> <img src="https://m.media-amazon.com/images/I/51QO4llkk7L._AC_.jpg" alt="Pokemon 2"></div>
+			<div class="pokemon3"> <img src="https://m.media-amazon.com/images/I/51QO4llkk7L._AC_.jpg" alt="Pokemon 3"></div>
+			<div class="pokemon4"> <img src="https://th.bing.com/th/id/OIP.aSOi3RFIM0ZBJ_kvZb03WgAAAA?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pokemon 4"></div>
+            <div class="pokemon5"> <img src="https://th.bing.com/th/id/OIP.aSOi3RFIM0ZBJ_kvZb03WgAAAA?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Pokemon 5"></div>
+		</div>
+    <a href="../index.html"><button> Click me for Home</button> </a>
+	</body>
+</html>
