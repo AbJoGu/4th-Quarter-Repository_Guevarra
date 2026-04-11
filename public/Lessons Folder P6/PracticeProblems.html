@@ -57,26 +57,79 @@
             <h1>Practice Problems</h1>
             <p>Here are some practice problems to help you reinforce your understanding of the concepts covered in this chapter.</p>
             <br>
-            <p>Problem 1: A car accelerates from rest at a rate of 2 m/s² for 5 seconds. What is its final velocity?</p>
             <forms>
-                <input type="radio" id="option1" name="problem1" value="option1">
+                <p>Problem 1: A car accelerates from rest at a rate of 2 m/s² for 5 seconds. What is its final velocity?</p>
+
+                <input type="radio" id="option1" name="problem1" value="10ms">
                 <label for="option1"> 10 m/s </label>
 
-                <input type="radio" id="option2" name="problem1" value="option2">
+                <input type="radio" id="option2" name="problem1" value="20ms">
                 <label for="option2"> 20 m/s </label>
 
-                <input type="radio" id="option3" name="problem1" value="option3">
+                <input type="radio" id="option3" name="problem1" value="25ms">
                 <label for="option3"> 25 m/s </label>
 
-                <input type="radio" id="option4" name="problem1" value="option4">
+                <input type="radio" id="option4" name="problem1" value="50ms">
                 <label for="option4"> 50 m/s </label> <br><br>
+
+                <p>Problem 2: A ball is thrown vertically upward with an initial velocity of 20 m/s. How high will it go before coming to a stop?</p>
+
+                <input type="radio" id="option2" name="problem2" value="40m">
+                <label for="option2"> 40 m </label>
+
+                <input type="radio" id="option3" name="problem2" value="25m">
+                <label for="option3"> 25 m </label>
+
+                <input type="radio" id="option1" name="problem2" value="20m">
+                <label for="option1"> 20 m </label>
+
+
+                <input type="radio" id="option4" name="problem2" value="50m">
+                <label for="option4"> 50 m </label> <br><br>
+
+                <p>Problem 3: WWhich of the following is a vector quantity?</p>
+                <input type="radio" id="option1" name="problem3" value="speed">
+                <label for="option1"> Speed </label>
+
+                <input type="radio" id="option2" name="problem3" value="velocity">
+                <label for="option2"> Velocity </label>
+
+                <input type="radio" id="option3" name="problem3" value="mass">
+                <label for="option3"> Mass </label>
+
+                <input type="radio" id="option4" name="problem3" value="time">
+                <label for="option4"> Time </label> <br><br>
+
+                <button type="submit" onclick="checkAnswers()"> Submit and Check </button>
             </forms>
-            <p>Problem 2: A ball is thrown vertically upward with an initial velocity of 20 m/s. How high will it go before coming to a stop?</p>
             <br>
             <nav>
                 <a href="ChapterSummary.html"> Back to Chapter Summary    |</a>
                 <a href="LessonDirectory.html" > Back to Lesson Directory >>> </a>
             </nav>
         </div>
+
+        <script>
+            function checkAnswers() {
+                const problem1Answer = document.querySelector('input[name="problem1"]:checked').value;
+                const problem2Answer = document.querySelector('input[name="problem2"]:checked').value;
+                const problem3Answer = document.querySelector('input[name="problem3"]:checked').value
+                const score = 0;
+
+                if (problem1Answer === "10ms") {
+                    score = score + 1;
+                }
+
+                if (problem2Answer === "20m") {
+                    score = score + 1;
+                    alert("Correct! The maximum height is 20 m.");
+                } 
+                if (problem3Answer === "velocity") {
+                    score = score + 1;
+                }
+
+                alert("Your score is: " + score + "/3");
+            }
+        </script>
     </body>
 </html>
