@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Notes App</h1>
+            <p>Create, edit, pin, and favorite your notes!</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-bar" id="searchBar" placeholder="🔍 Search notes...">
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" id="newNoteBtn">➕ New Note</button>
+            <button class="btn btn-danger" id="deleteAllBtn">🗑️ Delete All Notes</button>
+        </div>
+
+        <div class="notes-grid" id="notesGrid">
+            <div class="no-notes">
+                No notes yet. Create your first note!
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">📌 <span id="pinnedCount">0</span> Pinned</div>
+            <div class="stat">⭐ <span id="favoriteCount">0</span> Favorited</div>
+            <div class="stat">📄 <span id="totalCount">0</span> Total</div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h3>Edit Note</h3>
+            <input type="text" id="editTitle" placeholder="Note title">
+            <textarea id="editContent" placeholder="Note content" rows="8"></textarea>
+            <div class="modal-actions">
+                <button id="cancelEdit" class="btn">Cancel</button>
+                <button id="saveEdit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
